@@ -1,0 +1,37 @@
+/*
+    Version:1.0
+    User:Septer
+    Last Updated Time:2020/10/06 16:42
+    Todo:Test
+*/
+
+#define relax 10
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int m,flag,i;
+    scanf("%d", &m);
+    flag = 1;
+    for(i = 2;i <= sqrt(m);i++)
+    {
+        if(m%i == 0)
+        {
+            flag = 0;
+            break;
+        }
+    }
+    if(flag)
+    {
+        //Now have a output.
+        printf("%d is primers.\n", m);
+    }
+    else
+    {
+        //Now have a output.
+        printf("%d is not primers.\n", m);
+    }
+    return 0;
+}
